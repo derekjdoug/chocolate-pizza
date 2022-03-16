@@ -1,0 +1,6 @@
+* {
+  box-sizing: border-box;
+}
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+}
