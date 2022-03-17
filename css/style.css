@@ -1,10 +1,19 @@
 * {
   box-sizing: border-box;
 }
+html{
+  width: 800px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 input[type=checkbox]:checked + label.strikethrough{
   text-decoration: line-through;
 }
-
+input[type=checkbox]~label{
+  padding-left: 30px;
+}
 h2 {
   font-size: 35px;
 }
@@ -21,29 +30,37 @@ h1 {
 
 main p {
   color: slategrey;
+  font-size: 17.5px;
+  margin: 30px auto;
+  text-indent: 25px;
+  width:100%;
+}
+
+
+article p {
   font-size: 18px;
-  margin: 30px;
+  color: slategrey;
+  margin: 15px;
+}
+
+article {
+  display: inline-block;
+  flex-wrap: wrap;
+  width: 600px;
+  margin-top: 15px;
 }
 
 label {
   color: sienna;
   font-family: cursive;
+  font-size: 19px;
+  margin-top: 8px;
+  display: block;
 }
 
-h3 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-article p {
-  font-size: 18px;
-  color: slategrey;
-}
-
-article {
+article img {
   float: left;
-  display: flex;
-  flex-wrap: wrap;
+  margin-right: 15px;
 }
 
 footer {
@@ -52,9 +69,48 @@ footer {
   margin-top: 140px;
 }
 
+h3 {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+}
+
 footer img {
   padding: 8px;
   position: relative;
   top: -40px;
   background-color: white;
+}
+button {
+  background-color: #c77854;
+  color: white;
+  border: none;
+  padding: 17px 30px;
+  position: relative;
+  right: -37px;
+  top: -30px;
+}
+#left_field {
+  position: absolute;
+  width: 350px;
+  }
+#right_field {
+  width: 350px;
+  position: absolute;
+  left: 470px;
+  }
+form {
+  padding-left: 50px;
+  padding-top: 28px;
+}
+nav {
+  height: 50px;
+}
+ul {
+  float: right;
+  display: flex;
+  gap: 2px;
+}
+li:nth-child(7n) {
+  margin-left: 8px;
 }
